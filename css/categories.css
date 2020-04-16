@@ -1,0 +1,7 @@
+.categories__title {
+	display: flex;
+	margin: 10px; 
+	background-color: lightgray;
+	color: black;
+	justify-content: space-between;
+}

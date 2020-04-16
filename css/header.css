@@ -1,13 +1,12 @@
 * {
 	/* border-color: red;
 	border-width: 1px;
-	border-style: dashed;
+	border-style: solid;
 	color: white; */
 }
 
 body {
 	margin: 0px;
-	background-color: white;
 	font-size: 20px;
 }
 

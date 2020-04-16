@@ -1,0 +1,11 @@
+.employees__button {
+	font-size: 18px;
+	margin: 0px;
+	padding: 5px;
+	width: 150px;
+	height: 40px;
+	background-color: #cc4477;
+	color: white;
+	border-radius: 10px;
+	font-weight: 600;
+}
