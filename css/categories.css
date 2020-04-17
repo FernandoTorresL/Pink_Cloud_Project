@@ -1,7 +1,18 @@
-.categories__title {
-	display: flex;
+.category {
 	margin: 10px; 
-	background-color: lightgray;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
 	color: black;
-	justify-content: space-between;
+	border-color: black;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.category__header--img {
+	width: 30px;
+	margin-top: 10px;
+}
+
+.category__img-title {
+	vertical-align: center;
 }
