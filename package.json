@@ -15,5 +15,9 @@
     "test"
   ],
   "author": "Fernando Torres <fertorresmx@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
