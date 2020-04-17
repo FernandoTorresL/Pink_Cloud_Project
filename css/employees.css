@@ -1,5 +1,17 @@
+.employee {
+	width: 100%;
+	margin: 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	color: black;
+	border-color: lightgray;
+	border-style: solid;
+	border-width: 1px;
+	align-items: center;
+}
+
 .employee__button {
-	font-size: 18px;
+	font-size: 16px;
 	margin: 0px;
 	padding: 5px;
 	width: 150px;
@@ -8,4 +20,64 @@
 	color: white;
 	border-radius: 10px;
 	font-weight: 600;
+}
+
+input[type=checksbox] {
+	transform: scale(2.5);
+}
+
+.employee__container {
+	display: grid;
+	/* grid-template-columns: 50px 80px 175px 125px 100px;
+	grid-template-rows: 50px 100px; */
+	grid-template: 30px 100px / 90px 100px 250px 150px 100px 150px;
+	/* grid-template-areas: 	"checkbox portrait employee_data salary status actions"
+												". . employee_data2 salary status actions"; */
+
+	grid-gap: 20px;
+}
+
+.item {
+	background-color: cadetblue;
+	border: 1px solid red;
+	display: flex;
+}
+
+.checkbox {
+	grid-area: checkbox;
+}
+
+.portrait {
+	grid-area: portrait;
+}
+
+.employee_data {
+	grid-area: employee;
+}
+
+.employee_data2 {
+	grid-area: employee;
+}
+
+.employee__data__job {
+	display: flex;
+	font-size: 14px;
+}
+
+.salary {
+	grid-area: salary;
+	text-align: left;
+}
+
+.salary__journal {
+	font-size: 14px;
+}
+
+.status {
+	grid-area: status;
+	text-align: center;
+}
+
+.actions {
+	grid-area: actions;
 }
