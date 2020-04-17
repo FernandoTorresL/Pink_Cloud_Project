@@ -1,18 +1,28 @@
 .employee {
-	width: 100%;
-	margin: 0px 0px;
 	font-family: Arial, Helvetica, sans-serif;
+	/* border-color: lightgray;
+	border-style: solid;
+	border-width: 3px; */
+}
+
+.employee__nav {
+	display: flex;
+	width: 100%;
+	height: 80px;
+	padding-top: 20px;
+	top: 0px;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.employee__table {
 	background-color: white;
 	color: black;
-	border-color: lightgray;
-	border-style: solid;
-	border-width: 1px;
-	align-items: center;
 }
 
 .employee__button {
 	font-size: 16px;
-	margin: 0px;
+	margin: 20px;
 	padding: 5px;
 	width: 150px;
 	height: 40px;
@@ -22,62 +32,51 @@
 	font-weight: 600;
 }
 
-input[type=checksbox] {
+input[type=checkbox] {
 	transform: scale(2.5);
 }
 
 .employee__container {
 	display: grid;
-	/* grid-template-columns: 50px 80px 175px 125px 100px;
-	grid-template-rows: 50px 100px; */
-	grid-template: 30px 100px / 90px 100px 250px 150px 100px 150px;
-	/* grid-template-areas: 	"checkbox portrait employee_data salary status actions"
-												". . employee_data2 salary status actions"; */
-
+	grid-template: 100px / 90px 100px 250px 150px 100px 150px;
 	grid-gap: 20px;
 }
 
-.item {
-	background-color: cadetblue;
-	border: 1px solid red;
-	display: flex;
+.employee__container--gray div{
+	background-color: lightgray;
 }
 
-.checkbox {
-	grid-area: checkbox;
+.employee__container--white div{
+	background-color: white;
 }
 
-.portrait {
-	grid-area: portrait;
+.employee__checkbox {
+	align-self: center;
+	justify-self: center;
 }
 
-.employee_data {
-	grid-area: employee;
+.employee__header {
+	align-self: center;
+	justify-self: center;
+	font-weight: 600;
 }
 
-.employee_data2 {
-	grid-area: employee;
+.employee__header--left {
+	margin: 0px;
+	padding: 0px;
+	justify-items: start;
+	align-self: center;
+	font-weight: 600;
 }
 
-.employee__data__job {
-	display: flex;
-	font-size: 14px;
+.employee__item {
+	margin: 0px;
+	padding: 0px 0px 16px 0px;
+	align-self: center;
+	justify-self: start;
 }
 
-.salary {
-	grid-area: salary;
-	text-align: left;
-}
-
-.salary__journal {
-	font-size: 14px;
-}
-
-.status {
-	grid-area: status;
-	text-align: center;
-}
-
-.actions {
-	grid-area: actions;
+.employee__item .employee__job {
+	font-size: 12px;
+	margin: 0px;
 }
