@@ -1,9 +1,11 @@
 import React from 'react';
 
-const CategoriesList = ({children}) => (
-	<ul>
-		{children}
-	</ul>
-)
+const CategoriesList = ({ children }) => (
+  <ul>
+    <li>
+      {children}
+    </li>
+  </ul>
+);
 
 export default CategoriesList;
