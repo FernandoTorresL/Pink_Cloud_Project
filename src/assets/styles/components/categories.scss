@@ -1,18 +1,22 @@
+.categories__title {
+	margin: 40px;
+}
+
 .category {
 	width: 250px;
-	margin: 0px 0px;
+	margin: 20px 20px;
 	font-family: Arial, Helvetica, sans-serif;
 	background-color: white;
 	color: black;
-	border-color: lightgray;
-	border-style: solid;
-	border-width: 1px;
+	// border-color: lightgray;
+	// border-style: solid;
+	// border-width: 1px;
 	align-items: center;
 }
 
 .category__title {
 	display: flex;
-	margin: 10px 0px 10px 20px;
+	margin: 10px 10px 20px 20px;
 	align-items: center;
 	font-size: 16px;
 	color: gray;

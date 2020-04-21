@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/categories.scss';
+import '../assets/styles/components/Categories.scss';
 import checkboxCategoryImg from '../assets/static/checkbox-category.svg';
 
 const Categories = ({ children }) => (

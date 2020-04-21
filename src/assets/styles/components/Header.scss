@@ -1,8 +1,9 @@
 .header {
 	display: flex;
+	margin: 0px 0px 0px 20px;
 	width: 100%;
 	height: 80px;
-	padding-top: 20px;
+	padding-top: 10px;
 	top: 0px;
 	font-family: Arial, Helvetica, sans-serif;
 	justify-content: space-between;
@@ -24,9 +25,10 @@
 
 .header__logo__title {
 	display: flex;
-	color: gray;
+	margin: 30px 0px 10px -30px;
+	color: darkslateblue;
+	font-size: 30px;
 }
-
 
 .header__navmenu {
 	margin-right: 30px;
