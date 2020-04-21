@@ -57,5 +57,5 @@ npm run start
 
 ---
 
-Stable version, 21Apr: [Commit 783d43e](https://github.com/FernandoTorresL/ejercicio-platzi-master/commit/783d43eb24508b4f9441415c9e784555ad1e591a)
+Stable version, 21Apr: [Commit 2de7393](https://github.com/FernandoTorresL/ejercicio-platzi-master/commit/2de7393d88664a83c22e3a7a649dfae9fe30f073)
 
