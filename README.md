@@ -7,6 +7,8 @@ Create frontend/CRUD for the next mockup
 
 ### Work In Progress
 
+Base Project: https://github.com/FernandoTorresL/ejercicio_maqueta01
+
 Mockup:
 ![Imgur](https://i.imgur.com/ezVmirk.png)
 
