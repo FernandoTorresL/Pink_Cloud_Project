@@ -2,7 +2,7 @@ import React from 'react';
 
 const CategoriesList = ({ children }) => (
   <ul>
-      {children}
+    {children}
   </ul>
 );
 
