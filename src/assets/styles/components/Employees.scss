@@ -6,7 +6,7 @@
 .employee__nav {
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 45px;
   padding-top: 20px;
   top: 0px;
   justify-content: flex-end;
@@ -31,21 +31,23 @@
 }
 
 input[type=checkbox] {
-  transform: scale(2.5);
+  transform: scale(2.0);
 }
 
 .employee__container {
   display: grid;
-  grid-template: 100px / 90px 100px 250px 150px 100px 150px;
-  grid-gap: 20px;
+  grid-template: 100px / 60px 100px 250px 150px 100px 150px;
+  grid-gap: 0px;
 }
 
-.employee__container--gray div{
+.employee__container--gray {
   background-color: lightgray;
+  font-size: 16px;
 }
 
-.employee__container--white div{
+.employee__container--white {
   background-color: white;
+  width: 80%;
 }
 
 .employee__checkbox {
@@ -67,6 +69,10 @@ input[type=checkbox] {
   font-weight: 600;
 }
 
+.employee__header--left img {
+  margin: 0px 20px 0px 0px;
+}
+
 .employee__item {
   margin: 0px;
   padding: 0px 0px 16px 0px;
@@ -75,6 +81,6 @@ input[type=checkbox] {
 }
 
 .employee__item .employee__job {
-  font-size: 12px;
+  font-size: 16px;
   margin: 0px;
 }

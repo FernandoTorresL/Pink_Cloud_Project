@@ -4,7 +4,7 @@ import checkboxCategoryImg from '../assets/static/checkbox-category.svg';
 
 const Categories = ({ children }) => (
   <div className='categories'>
-    <h3 className='categories__title'>Lista de empleados</h3>
+    <h4 className='categories__title'>Lista de empleados</h4>
 
     <div className='category'>
 

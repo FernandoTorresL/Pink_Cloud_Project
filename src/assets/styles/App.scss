@@ -1,7 +1,7 @@
 * {
-  border-color: lightcoral;
-  border-width: 1px;
-  border-style: solid;
+  // border-color: lightcoral;
+  // border-width: 1px;
+  // border-style: solid;
 }
 
 body {
@@ -12,5 +12,6 @@ body {
 .hero_container {
   display: grid;
   grid-template-columns: 300px 1fr;
-  grid-template-areas: "categories employees"
+  grid-template-areas: "categories employees";
+  background-color: lightgray;
 }
