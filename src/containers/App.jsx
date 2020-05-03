@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Categories from '../components/Categories';
 import CategoriesList from '../components/CategoriesList';
 import CategoryItem from '../components/CategoryItem';
+import Employees from '../components/Employees';
 
 import useInitialState from '../hooks/useInitialState';
 
@@ -16,11 +17,15 @@ const App = () => {
   return initialState.length === 0 ? <h1>Loading...</h1> : (
     <div className='App'>
       <Header />
-      <Categories>
-        <CategoriesList>
-          {initialState.projects.map((item) => <CategoryItem key={item.id} {...item} />)}
-        </CategoriesList>
-      </Categories>
+      <div className='hero_container'>
+        <Categories>
+          <CategoriesList>
+            {initialState.projects.map((item) => <CategoryItem key={item.id} {...item} />)}
+          </CategoriesList>
+        </Categories>
+
+        <Employees />
+      </div>
     </div>
   );
 };
