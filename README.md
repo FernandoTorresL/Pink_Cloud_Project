@@ -59,11 +59,13 @@ npm run start
 ```
 
 ---
-
-Stable version, branch master/release, 04May.
-WIP version, feature or develop branches.
+### Stable version, branch master/release, 04May.
 ---
-# Follow me 
+### WIP version, feature or develop branches.
+---
+
+# Follow me
+
 [fertorresmx.com](http://fertorresmx.com/)
 
 ## :globe_with_meridians: Twitter, Instagram: @fertorresmx
