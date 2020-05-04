@@ -58,5 +58,10 @@ npm run start
 
 ---
 
-Stable version, 21Apr: [Commit 2de7393](https://github.com/FernandoTorresL/ejercicio-platzi-master/commit/2de7393d88664a83c22e3a7a649dfae9fe30f073)
+Stable version, branch master/release, 04May.
+WIP version, feature or develop branches.
+---
+# Follow me 
+[fertorresmx.com](http://fertorresmx.com/)
 
+## :globe_with_meridians: Twitter, Instagram: @fertorresmx
