@@ -3,7 +3,7 @@ import iconNavMenu from '../assets/static/icon-nav-menu.png';
 import iconEdit from '../assets/static/edit-employee.png';
 import iconDelete from '../assets/static/delete-employee.png';
 
-const EmployeeItem = ({ name, lastName, job, salary, typeJob, status, avatar }) => (
+const EmployeeItem = ({ name, lastName, job, salary, typeJob, status }) => (
 
   <div className='employee__container'>
 

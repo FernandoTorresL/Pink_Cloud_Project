@@ -5,7 +5,7 @@ const CategoryItem = ({ name, icon }) => (
     <div className='category__list__item'>
       <p>
         {name}
-        <img className='category__header--img' src={icon} alt='Proyect icon' />
+        <img className='category__header--img' src={icon} alt='icon' />
       </p>
     </div>
   </li>

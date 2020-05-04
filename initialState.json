@@ -4,7 +4,7 @@
       {
         "id": 1,
         "name": "Deportes",
-        "icon": "https://i.imgur.com/da7QfQl.png"
+        "icon": "https://i.imgur.com/537mxyz.png"
       },
       {
         "id": 2,
@@ -14,22 +14,22 @@
       {
         "id": 3,
         "name": "Construcción",
-        "icon": "https://i.imgur.com/da7QfQl.png"
+        "icon": "https://i.imgur.com/GhXN6ne.png"
       },
       {
         "id": 4,
         "name": "Programación",
-        "icon": "https://i.imgur.com/da7QfQl.png"
+        "icon": "https://i.imgur.com/MGBY6xc.png"
       },
       {
         "id": 5,
         "name": "Biología",
-        "icon": "https://i.imgur.com/da7QfQl.png"
+        "icon": "https://i.imgur.com/cdFN664.png"
       },
       {
         "id": 6,
         "name": "Animales",
-        "icon": "https://i.imgur.com/da7QfQl.png"
+        "icon": "https://i.imgur.com/K5BSzJM.png"
       }
     ],
     "employees": [
