@@ -14,22 +14,22 @@
       {
         "id": 3,
         "name": "Construcción",
-        "icon": "construcción-category.svg"
+        "icon": "https://i.imgur.com/da7QfQl.png"
       },
       {
         "id": 4,
         "name": "Programación",
-        "icon": "programacion-category.svg"
+        "icon": "https://i.imgur.com/da7QfQl.png"
       },
       {
         "id": 5,
         "name": "Biología",
-        "icon": "biologia-category.svg"
+        "icon": "https://i.imgur.com/da7QfQl.png"
       },
       {
         "id": 6,
         "name": "Animales",
-        "icon": "animales-category.svg"
+        "icon": "https://i.imgur.com/da7QfQl.png"
       }
     ],
     "employees": [

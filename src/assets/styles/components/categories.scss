@@ -45,17 +45,16 @@
 .category__list li {
   list-style: none;
   width: 150px;
-  height: 40px;
+  height: 50px;
   text-align: center;
 }
 
 .category__list__item {
   display: inline-flex;
   color: black;
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.category__list img {
-  width: 20px;
-  margin: 5px;
+.category__list__item img {
+  margin-left: 10px;
 }

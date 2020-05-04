@@ -1,11 +1,11 @@
 import React from 'react';
 import '../assets/styles/components/Employees.scss';
 
-const Employees = () => (
+const Employees = ({ children }) => (
   <section className='employee'>
     <div className='employee__nav'>
       <div>
-        <button className='employee__button'>Agregar</button>
+        <button className='employee__button' type='button'>Agregar</button>
       </div>
     </div>
 
@@ -37,45 +37,11 @@ const Employees = () => (
           </div>
 
         </div>
-
       </div>
 
-      <div className='employee__container--white'>
-
-        <div className='employee__container'>
-
-          <div className='employee__header'>
-            <input type='checkbox' />
-          </div>
-
-          <div className='employee__header'>
-            <img src='../images/icono-navmenu.png' alt='Portrait' />
-          </div>
-
-          <div className='employee__item'>
-            <p>Nombre Apellido</p>
-            <p className='employee__job'>Software Enginner</p>
-          </div>
-
-          <div className='employee__item'>
-            <p>2.000 USD</p>
-            <p className='employee__job'>full time</p>
-          </div>
-
-          <div className='employee__item'>
-            <p>Activo</p>
-          </div>
-
-          <div className='employee__header--left'>
-            <img src='../images/editar-employee.png' alt='Portrait' />
-            <img src='../images/borrar-employee.png' alt='Portrait' />
-          </div>
-
-        </div>
-
-      </div>
-
+      {children}
     </div>
+
   </section>
 );
 
