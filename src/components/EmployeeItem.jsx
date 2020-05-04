@@ -1,6 +1,9 @@
 import React from 'react';
+import iconNavMenu from '../assets/static/icon-nav-menu.png';
+import iconEdit from '../assets/static/edit-employee.png';
+import iconDelete from '../assets/static/delete-employee.png';
 
-const EmployeeItem = ({ name, last_name, job, salary, type_job, status, avatar }) => (
+const EmployeeItem = ({ name, lastName, job, salary, typeJob, status, avatar }) => (
 
   <div className='employee__container'>
 
@@ -9,17 +12,23 @@ const EmployeeItem = ({ name, last_name, job, salary, type_job, status, avatar }
     </div>
 
     <div className='employee__header'>
-      <img src={ avatar } alt='Portrait' />
+      <img src={iconNavMenu} alt='Portrait' />
     </div>
 
     <div className='employee__item'>
-      <p>{ name } { last_name }</p>
+      <p>
+        { name }
+        <span> </span>
+        { lastName }
+      </p>
       <p className='employee__job'>{ job }</p>
     </div>
 
     <div className='employee__item'>
-      <p>{ salary }USD</p>
-      <p className='employee__job'>{ type_job }</p>
+      <p>
+        {salary}
+      </p>
+      <p className='employee__job'>{ typeJob }</p>
     </div>
 
     <div className='employee__item'>
@@ -27,8 +36,8 @@ const EmployeeItem = ({ name, last_name, job, salary, type_job, status, avatar }
     </div>
 
     <div className='employee__header--left'>
-      <img src='../images/editar-employee.png' alt='Portrait' />
-      <img src='../images/borrar-employee.png' alt='Portrait' />
+      <img src={iconEdit} alt='Portrait' />
+      <img src={iconDelete} alt='Portrait' />
     </div>
 
   </div>

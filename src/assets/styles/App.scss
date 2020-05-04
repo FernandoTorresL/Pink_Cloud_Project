@@ -1,9 +1,3 @@
-* {
-  // border-color: lightcoral;
-  // border-width: 1px;
-  // border-style: solid;
-}
-
 body {
   margin: 10px;
   font-size: 20px;
@@ -13,5 +7,5 @@ body {
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-areas: "categories employees";
-  background-color: lightgray;
+  background-color: gainsboro;
 }

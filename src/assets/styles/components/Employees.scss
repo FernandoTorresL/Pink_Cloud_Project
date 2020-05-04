@@ -36,12 +36,12 @@ input[type=checkbox] {
 
 .employee__container {
   display: grid;
-  grid-template: 100px / 60px 100px 250px 150px 100px 150px;
+  grid-template: 100px / 60px 100px 250px 170px 150px 150px;
   grid-gap: 0px;
 }
 
 .employee__container--gray {
-  background-color: lightgray;
+  background-color: gainsboro;
   font-size: 16px;
 }
 
