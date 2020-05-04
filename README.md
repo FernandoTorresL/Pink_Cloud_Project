@@ -9,10 +9,10 @@ Create frontend/CRUD for the next mockup
 
 Mockup:
 ![Imgur](https://i.imgur.com/ezVmirk.png)
-
+-------
 #### Stage 1: Create HTML, CSS files
 Finished
--------
+
 Preview of **Header**
 ![Imgur](https://i.imgur.com/D28wlAF.png)
 
@@ -22,14 +22,15 @@ Preview of **Categories**
 Preview of **Employees**
 ![Imgur](https://i.imgur.com/333sui8.png)
 
-
+---
 #### Stage 2: Convert to React Components
+Finished
 
 This is the result so far: Preview of FrontEnd with React, Hooks and a Fake API:
-![Imgur](https://i.imgur.com/t0w1ruQ.png)
+![Imgur](https://i.imgur.com/vx23bAO.png)
 
 ---
-### WIP: Incorporating the missing component Employees ###
+### WIP Stage 3: Do the backend part and database
 
 ----
 

@@ -1,11 +1,11 @@
-* {
-	/* border-color: red;
-	border-width: 1px;
-	border-style: solid;
-	color: white; */
+body {
+  margin: 10px;
+  font-size: 20px;
 }
 
-body {
-	margin: 10px;
-	font-size: 20px;
+.hero_container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas: "categories employees";
+  background-color: gainsboro;
 }

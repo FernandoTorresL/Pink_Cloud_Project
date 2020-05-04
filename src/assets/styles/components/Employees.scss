@@ -1,0 +1,86 @@
+.employee {
+  grid-area: employees;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.employee__nav {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  padding-top: 20px;
+  top: 0px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.employee__table {
+  background-color: white;
+  color: black;
+}
+
+.employee__button {
+  font-size: 16px;
+  margin: 20px;
+  padding: 5px;
+  width: 150px;
+  height: 40px;
+  background-color: #cc4477;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+input[type=checkbox] {
+  transform: scale(2.0);
+}
+
+.employee__container {
+  display: grid;
+  grid-template: 100px / 60px 100px 250px 170px 150px 150px;
+  grid-gap: 0px;
+}
+
+.employee__container--gray {
+  background-color: gainsboro;
+  font-size: 16px;
+}
+
+.employee__container--white {
+  background-color: white;
+  width: 80%;
+}
+
+.employee__checkbox {
+  align-self: center;
+  justify-self: center;
+}
+
+.employee__header {
+  align-self: center;
+  justify-self: center;
+  font-weight: 600;
+}
+
+.employee__header--left {
+  margin: 0px;
+  padding: 0px;
+  justify-items: start;
+  align-self: center;
+  font-weight: 600;
+}
+
+.employee__header--left img {
+  margin: 0px 20px 0px 0px;
+}
+
+.employee__item {
+  margin: 0px;
+  padding: 0px 0px 16px 0px;
+  align-self: center;
+  justify-self: start;
+}
+
+.employee__item .employee__job {
+  font-size: 16px;
+  margin: 0px;
+}
