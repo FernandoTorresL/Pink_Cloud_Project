@@ -7,6 +7,8 @@ Create frontend/CRUD for the next mockup
 
 ### Work In Progress
 
+Base Project: https://github.com/FernandoTorresL/ejercicio_maqueta01
+
 Mockup:
 ![Imgur](https://i.imgur.com/ezVmirk.png)
 -------
@@ -57,11 +59,13 @@ npm run start
 ```
 
 ---
-
-Stable version, branch master/release, 04May.
-WIP version, feature or develop branches.
+### Stable version, branch master/release, 04May.
 ---
-# Follow me 
+### WIP version, feature or develop branches.
+---
+
+# Follow me
+
 [fertorresmx.com](http://fertorresmx.com/)
 
 ## :globe_with_meridians: Twitter, Instagram: @fertorresmx
