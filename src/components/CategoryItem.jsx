@@ -1,13 +1,12 @@
 import React from 'react';
-import categoryImg from '../assets/static/deportes-category.svg';
 
-const categoryPath = '../assets/static/';
-
-const CategoryItem = ({name, icon}) => (
+const CategoryItem = ({ name, icon }) => (
   <li>
     <div className='category__list__item'>
-      <p>{name}</p>
-      <img className='category__header--img' src={categoryImg} alt={icon} />
+      <p>
+        {name}
+        <img className='category__header--img' src={icon} alt='icon' />
+      </p>
     </div>
   </li>
 );

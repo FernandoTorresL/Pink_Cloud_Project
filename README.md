@@ -11,10 +11,10 @@ Base Project: https://github.com/FernandoTorresL/ejercicio_maqueta01
 
 Mockup:
 ![Imgur](https://i.imgur.com/ezVmirk.png)
-
+-------
 #### Stage 1: Create HTML, CSS files
 Finished
--------
+
 Preview of **Header**
 ![Imgur](https://i.imgur.com/D28wlAF.png)
 
@@ -24,14 +24,15 @@ Preview of **Categories**
 Preview of **Employees**
 ![Imgur](https://i.imgur.com/333sui8.png)
 
-
+---
 #### Stage 2: Convert to React Components
+Finished
 
 This is the result so far: Preview of FrontEnd with React, Hooks and a Fake API:
-![Imgur](https://i.imgur.com/t0w1ruQ.png)
+![Imgur](https://i.imgur.com/vx23bAO.png)
 
 ---
-### WIP: Incorporating the missing component Employees ###
+### WIP Stage 3: Do the backend part and database
 
 ----
 
@@ -59,5 +60,10 @@ npm run start
 
 ---
 
-Stable version, 21Apr: [Commit 2de7393](https://github.com/FernandoTorresL/ejercicio-platzi-master/commit/2de7393d88664a83c22e3a7a649dfae9fe30f073)
+Stable version, branch master/release, 04May.
+WIP version, feature or develop branches.
+---
+# Follow me 
+[fertorresmx.com](http://fertorresmx.com/)
 
+## :globe_with_meridians: Twitter, Instagram: @fertorresmx

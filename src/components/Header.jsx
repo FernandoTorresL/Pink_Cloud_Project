@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/components/Header.scss';
 import headerLogo from '../assets/static/header_logo.png';
-import iconoNavmenu from '../assets/static/icono-navmenu.png';
+import iconNavMenu from '../assets/static/icon-nav-menu.png';
 
 const Header = () => (
   <header className='header'>
@@ -11,10 +11,10 @@ const Header = () => (
       <p className='header__logo__title'>Logo</p>
     </div>
 
-    <div className='header__navmenu'>
+    <div className='header__nav__menu'>
 
-      <div className='header__navmenu--dropdown'>
-        <img src={iconoNavmenu} alt='Portrait' />
+      <div className='header__nav__menu--dropdown'>
+        <img src={iconNavMenu} alt='Portrait' />
         <p>Username</p>
       </div>
 
