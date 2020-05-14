@@ -5,6 +5,9 @@ const app = express();
 const { config } = require('./config/index');
 const employeesApi = require('./routes/employees.js');
 
+
+app.use(express.json());
+
 employeesApi(app);
 
 app.listen(config.port, function() {

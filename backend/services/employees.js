@@ -1,29 +1,50 @@
-/* eslint-disable class-methods-use-this */
-const { employeesMock } = require('../utils/mocks/employees');
+const MongoLib = require('../lib/mongo');
 
 class EmployeesService {
-  async getEmployees() {
-    const employees = await Promise.resolve(employeesMock);
+  constructor() {
+    this.collection = 'employees';
+    this.mongoDB = new MongoLib();
+  };
+
+  async getEmployees({ tags }) {
+    const query = tags && { tags: { $in: tags } };
+    const employees = await this.mongoDB.getAll(
+      this.collection,
+      query
+    );
     return employees || [];
   }
 
-  async getEmployee() {
-    const employee = await Promise.resolve(employeesMock[0].id);
+  async getEmployee({ employeeId }) {
+    const employee = await this.mongoDB.get(
+      this.collection,
+      employeeId
+    );
     return employee || {};
   };
 
-  async createEmployee() {
-    const createdEmployeeId = await Promise.resolve(employeesMock[0].id);
+  async createEmployee({ employee }) {
+    const createdEmployeeId = await this.mongoDB.create(
+      this.collection,
+      employee
+    );
     return createdEmployeeId;
   }
 
-  async updateEmployee() {
-    const updatedEmployeeId = await Promise.resolve(employeesMock[0].id);
+  async updateEmployee({ employeeId, employee } = {}) {
+    const updatedEmployeeId = await this.mongoDB.update(
+      this.collection,
+      employeeId,
+      employee
+    );
     return updatedEmployeeId;
   }
 
-  async deleteEmployee() {
-    const deletedEmployeeId = await Promise.resolve(employeesMock[0].id);
+  async deleteEmployee({ employeeId }) {
+    const deletedEmployeeId = await this.mongoDB.delete(
+      this.collection,
+      employeeId
+    );
     return deletedEmployeeId;
   }
 
