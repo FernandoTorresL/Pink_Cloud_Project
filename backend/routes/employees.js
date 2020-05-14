@@ -1,13 +1,17 @@
 const express = require('express');
-const { employeesMock } = require('../utils/mocks/employees');
+const EmployeesService = require('../services/employees');
 
 function employeesApi(app) {
   const router = express.Router();
   app.use('/api/employees', router);
 
+  const employeesService = new EmployeesService();
+
   router.get('/', async function(req, res, next) {
+    const { tags } = req.query;
+
     try {
-      const employees = await Promise.resolve(employeesMock);
+      const employees = await employeesService.getEmployees({ tags });
 
       res.status(200).json({
         message: 'All employees listed',
@@ -19,8 +23,10 @@ function employeesApi(app) {
   });
 
   router.get('/:employeeId', async function(req, res, next) {
+    const { employeeId } = req.params;
+
     try {
-      const employee = await Promise.resolve(employeesMock[0]);
+      const employee = await employeesService.getEmployee({ employeeId });
 
       res.status(200).json({
         message: '1 employee retrieved',
@@ -32,8 +38,10 @@ function employeesApi(app) {
   });
 
   router.post('/', async function(req, res, next) {
+    const { body: employee } = req;
+
     try {
-      const createEmployeeId = await Promise.resolve(employeesMock[0].id);
+      const createEmployeeId = await employeesService.createEmployee({ employee })
 
       res.status(201).json({
         message: '1 employee created',
@@ -45,8 +53,14 @@ function employeesApi(app) {
   });
 
   router.put('/:employeeId', async function(req, res, next) {
+    const { employeeId } = req.params;
+    const { body: employee } = req;
+
     try {
-      const updatedEmployeeId = await Promise.resolve(employeesMock[0].id);
+      const updatedEmployeeId = await employeesService.updateEmployee({
+        employeeId,
+        employee
+      });
 
       res.status(200).json({
         message: '1 employee updated',
@@ -58,8 +72,10 @@ function employeesApi(app) {
   });
 
   router.delete('/:employeeId', async function(req, res, next) {
+    const { employeeId } = req.params;
+
     try {
-      const deletedEmployeeId = await Promise.resolve(employeesMock[0].id);
+      const deletedEmployeeId = await employeesService.deleteEmployee({ employeeId })
 
       res.status(200).json({
         message: '1 employee deleted',
