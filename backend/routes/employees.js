@@ -12,6 +12,7 @@ function employeesApi(app) {
 
     try {
       const employees = await employeesService.getEmployees({ tags });
+      // throw new Error('Error getting employees');
 
       res.status(200).json({
         message: 'All employees listed',
