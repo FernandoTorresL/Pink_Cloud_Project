@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { connect } from 'react-redux';
 import Categories from '../components/Categories';
 import CategoriesList from '../components/CategoriesList';
 import CategoryItem from '../components/CategoryItem';
@@ -10,23 +11,23 @@ import useInitialState from '../hooks/useInitialState';
 
 import '../assets/styles/Home.scss';
 
-const API = 'http://localhost:3000/initialState/';
+//const API = 'http://localhost:3000/initialState/';
 
-const Home = () => {
-  const initialState = useInitialState(API);
-
-  return initialState.length === 0 ? <h1>Loading...</h1> : (
+const Home = ({ projects, employees }) => {
+  //const initialState = useInitialState(API);
+  // return initialState.length === 0 ? <h1>Loading...</h1> : (
+  return (
     <>
       <div className='hero_container'>
         <Categories>
           <CategoriesList>
-            {initialState.projects.map((item) => <CategoryItem key={item.id} {...item} />)}
+            {projects.map((item) => <CategoryItem key={item.id} {...item} />)}
           </CategoriesList>
         </Categories>
 
         <Employees>
           <EmployeesList>
-            {initialState.employees.map((item) => <EmployeeItem key={item.id} {...item} />)}
+            {employees.map((item) => <EmployeeItem key={item.id} {...item} />)}
           </EmployeesList>
         </Employees>
       </div>
@@ -34,4 +35,11 @@ const Home = () => {
   );
 };
 
-export default Home;
+const mapStateToProps = (state) => {
+  return {
+    projects: state.projects,
+    employees: state.employees,
+  };
+};
+
+export default connect(mapStateToProps, null)(Home);
