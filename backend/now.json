@@ -1,0 +1,28 @@
+{
+  "name": "pinkcloudproject",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.js",
+      "methods": ["POST", "GET", "PUT", "DELETE"],
+      "headers": {
+        "Access-Control-Allow-Origin": "_",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept",
+        "Access-Control-Allow-Credentials": "true"
+      }
+    }
+  ],
+  "env": {
+    "DB_USER": "@pinkcloudproject-db-user",
+    "DB_PASSWORD": "@pinkcloudproject-db-password",
+    "DB_HOST": "@pinkcloudproject-db-host",
+    "DB_NAME": "@pinkcloudproject-db-name"
+  }
+}

@@ -16,7 +16,7 @@ const MONGO_URI = `mongodb+srv://${USER}:${PASSWORD}@${config.dbHost}/${DB_NAME}
 
 class MongoLib {
   constructor() {
-    console.log('MONGO_URI', MONGO_URI);
+    // console.log('MONGO_URI', MONGO_URI);
     this.client = new MongoClient(MONGO_URI, { useNewUrlParser: true });
     this.dbName = DB_NAME;
   }
