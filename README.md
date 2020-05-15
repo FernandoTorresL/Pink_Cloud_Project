@@ -3,7 +3,19 @@
 
 ## Description
 
-Create Frontend/React/API/Backend(CRUD and Database) for the next mockup
+This project implements:
+
+Separated by folders: Frontend and Backend
+
+Frontend:
+- React
+- Router and Redux
+View README.md on folder Frontend
+
+Backend:
+- API
+- Database on MongoDB
+View README.md on folder Backend
 
 ### Work In Progress = Deploying
 
