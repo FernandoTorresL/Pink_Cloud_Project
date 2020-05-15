@@ -9,6 +9,12 @@ const {
 
 const validationHandler = require('../utils/middleware/validationHandler');
 
+const cacheResponse = require('../utils/cacheResponse');
+const { 
+  FIVE_MINUTES_IN_SECONDS,
+  SIXTY_MINUTES_IN_SECONDS
+} = require('../utils/time');
+
 function employeesApi(app) {
   const router = express.Router();
   app.use('/api/employees', router);
@@ -18,6 +24,7 @@ function employeesApi(app) {
   router.get(
     '/',
     async function (req, res, next) {
+      cacheResponse(res, FIVE_MINUTES_IN_SECONDS);
       const { tags } = req.query;
 
       try {
@@ -37,6 +44,7 @@ function employeesApi(app) {
     '/:employeeId',
     validationHandler({ employeeId: employeeIdSchema }, 'params'),
     async function (req, res, next) {
+      cacheResponse(res, SIXTY_MINUTES_IN_SECONDS);
       const { employeeId } = req.params;
 
       try {
