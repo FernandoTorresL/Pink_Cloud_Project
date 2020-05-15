@@ -1,20 +1,19 @@
 import { useState, useEffect } from 'react';
 
 const useInitialState = (API) => {
-  const [videos, setVideos] = useState(
+  const [lista, setLista] = useState(
     {
       projects: [],
-      trends: [],
-      originals: [],
+      employees: [],
     },
   );
 
   useEffect(() => {
     fetch(API)
       .then((response) => response.json())
-      .then((data) => setVideos(data));
+      .then((data) => setLista(data));
   }, []);
-  return videos;
+  return lista;
 };
 
 export default useInitialState;
