@@ -1,5 +1,5 @@
 
-# Project: Pink Cloud Project (PlatziMaster Project - Work In Progress)
+# Project: Pink Cloud Project (PlatziMaster Project)
 
 ## Description
 
