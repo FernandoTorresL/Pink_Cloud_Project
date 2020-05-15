@@ -1,11 +1,10 @@
 
-# Project: Pink Cloud Project (PlatziMaster Project - Work In Progress)
+# FrontEnd part
+# Project: Pink Cloud Project (PlatziMaster Project)
 
 ## Description
 
-Create Frontend/React/API/Backend(CRUD and Database) for the next mockup
-
-### Work In Progress = Deploying
+Create Frontend/React/Fake API for the next mockup
 
 Base Project: https://github.com/FernandoTorresL/ejercicio_maqueta01
 
@@ -36,12 +35,6 @@ Finished
 
 This is the result so far: Preview of FrontEnd with React, Hooks and a Fake API:
 ![Imgur](https://i.imgur.com/vx23bAO.png)
-
----
-
-#### Stage 3: Do the Backend, Database, CRUD methods on API and deploy
-
-Finished
 
 ---
 ---
