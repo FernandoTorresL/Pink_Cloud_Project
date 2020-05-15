@@ -3,7 +3,7 @@ import iconNavMenu from '../assets/static/icon-nav-menu.png';
 import iconEdit from '../assets/static/edit-employee.png';
 import iconDelete from '../assets/static/delete-employee.png';
 
-const EmployeeItem = ({ name, lastName, job, salary, typeJob, status }) => (
+const EmployeeItem = ({ first_name, last_name, job, salary, job_type, status }) => (
 
   <div className='employee__container'>
 
@@ -17,18 +17,18 @@ const EmployeeItem = ({ name, lastName, job, salary, typeJob, status }) => (
 
     <div className='employee__item'>
       <p>
-        { name }
+        { first_name }
         <span> </span>
-        { lastName }
+        { last_name }
       </p>
       <p className='employee__job'>{ job }</p>
     </div>
 
     <div className='employee__item'>
       <p>
-        {salary}
+        {salary} USD
       </p>
-      <p className='employee__job'>{ typeJob }</p>
+      <p className='employee__job'>{ job_type }</p>
     </div>
 
     <div className='employee__item'>
