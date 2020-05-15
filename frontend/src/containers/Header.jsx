@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/styles/Header.scss';
 import headerLogo from '../assets/static/header_logo.png';
 import iconNavMenu from '../assets/static/icon-nav-menu.png';
 
 const Header = () => (
   <header className='header'>
-
     <div className='header__logo'>
-      <img className='header__logo__img' src={headerLogo} alt='Logo' />
+      <Link to="/">
+        <img className='header__logo__img' src={headerLogo} alt='Logo' />
+      </Link>
       <p className='header__logo__title'>Logo</p>
     </div>
 
@@ -23,7 +25,9 @@ const Header = () => (
           <a href='/'>Cuenta</a>
         </li>
         <li>
-          <a href='/'>Cerrar sesión</a>
+          <Link to='/login'>
+            Iniciar sesión
+          </Link>
         </li>
       </ul>
 
