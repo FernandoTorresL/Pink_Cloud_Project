@@ -5,7 +5,7 @@ const {
   employeeIdSchema,
   createEmployeeSchema,
   updateEmployeeSchema,
-} = require("../utils/schemas/employees");
+} = require('../utils/schemas/employees');
 
 const validationHandler = require('../utils/middleware/validationHandler');
 
