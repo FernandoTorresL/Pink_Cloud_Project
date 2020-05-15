@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/components/Header.scss';
+import '../assets/styles/Header.scss';
 import headerLogo from '../assets/static/header_logo.png';
 import iconNavMenu from '../assets/static/icon-nav-menu.png';
 

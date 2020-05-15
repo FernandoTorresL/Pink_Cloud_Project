@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from '../components/Header';
 import Categories from '../components/Categories';
 import CategoriesList from '../components/CategoriesList';
 import CategoryItem from '../components/CategoryItem';
@@ -17,8 +16,7 @@ const Home = () => {
   const initialState = useInitialState(API);
 
   return initialState.length === 0 ? <h1>Loading...</h1> : (
-    <div className='Home'>
-      <Header />
+    <>
       <div className='hero_container'>
         <Categories>
           <CategoriesList>
@@ -32,7 +30,7 @@ const Home = () => {
           </EmployeesList>
         </Employees>
       </div>
-    </div>
+    </>
   );
 };
 

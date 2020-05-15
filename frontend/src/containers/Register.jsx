@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/styles/components/Register.scss';
+import '../assets/styles/Register.scss';
 
 const Register = () => (
   <section className='register'>
