@@ -1,39 +1,69 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+import gravatar from '../utils/gravatar';
+import { logoutRequest } from '../actions';
 import '../assets/styles/Header.scss';
 import headerLogo from '../assets/static/header_logo.png';
 import iconNavMenu from '../assets/static/icon-nav-menu.png';
 
-const Header = () => (
-  <header className='header'>
-    <div className='header__logo'>
-      <Link to="/">
-        <img className='header__logo__img' src={headerLogo} alt='Logo' />
-      </Link>
-      <p className='header__logo__title'>Logo</p>
-    </div>
+const Header = (props) => {
+  const { user } = props;
+  const hasUser = Object.keys(user).length > 0;
 
-    <div className='header__nav__menu'>
+  const handleLogout = () => {
+    props.logoutRequest({});
+  };
 
-      <div className='header__nav__menu--dropdown'>
-        <img src={iconNavMenu} alt='Portrait' />
-        <p>Username</p>
+  return (
+    <header className='header'>
+      <div className='header__logo'>
+        <Link to="/">
+          <img className='header__logo__img' src={headerLogo} alt='Logo' />
+        </Link>
+        <p className='header__logo__title'>Logo</p>
       </div>
 
-      <ul>
-        <li>
-          <a href='/'>Cuenta</a>
-        </li>
-        <li>
-          <Link to='/login'>
-            Iniciar sesión
-          </Link>
-        </li>
-      </ul>
+      <div className='header__nav__menu'>
 
-    </div>
+        <div className='header__nav__menu--dropdown'>
+          {hasUser ? 
+            <img src={gravatar(user.email)} alt={user.email} /> :
+            <img src={iconNavMenu} alt='' />
+          }
+          <p>Perfil</p>
+        </div>
 
-  </header>
-);
+        <ul>
+        {hasUser ?
+          <li><a href='/'>{user.name}</a></li> :
+          null }
 
-export default Header;
+        {hasUser ?
+          <li><a href='#logout' onClick={handleLogout}>Cerrar Sesión</a></li> :
+          (
+            <li>
+              <Link to='/login'>
+                Iniciar Sesión
+              </Link>
+            </li>
+          ) }
+        </ul>
+
+      </div>
+
+    </header>
+  );
+};
+
+const mapStateToProps = state => {
+  return {
+    user: state.user
+  };
+};
+
+const mapDispatchToProps = {
+  logoutRequest,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

@@ -1,4 +1,7 @@
 {
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
   "env": {
     "browser": true,
     "es6": true,
@@ -62,7 +65,7 @@
     "no-caller": 2,
     "no-catch-shadow": 0,
     "no-cond-assign": 2,
-    "no-console": 0,
+    "no-console": "warn",
     "no-constant-condition": 0,
     "no-continue": 0,
     "no-control-regex": 2,
